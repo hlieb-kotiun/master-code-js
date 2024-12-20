@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/header.js","../src/js/hero.js","../src/js/about-me.js"],"sourcesContent":["console.log('header');\n","console.log('hero');\n","console.log('about-me');\n"],"names":[],"mappings":"ssBAAA,QAAQ,IAAI,QAAQ,ECApB,QAAQ,IAAI,MAAM,ECAlB,QAAQ,IAAI,UAAU"}
