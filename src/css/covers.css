@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.covers-container {
+  margin-bottom: 96px;
+}
+
 .covers {
   background-image: url('../img-covers/covers-bg.png');
   backdrop-filter: blur(30px);
