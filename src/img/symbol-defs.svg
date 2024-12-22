@@ -6,5 +6,6 @@
 <symbol id="icon-arrow-left-1" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M26.667 16h-21.334M13.333 24l-8-8 8-8"></path>
 </symbol>
+<symbol id="icon-close" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.909" d="M24 8 8 24M8 8l16 16"/></symbol>
 </defs>
 </svg>
