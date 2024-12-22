@@ -11,30 +11,70 @@
   overflow: hidden;
 }
 
-.covers-container {
-  margin-bottom: 96px;
-}
-
 .covers {
-  background-image: url('../img-covers/covers-bg.png');
+  background-image: url('../img/img-covers/covers-bg.png');
   backdrop-filter: blur(30px);
-  background-color: #1c1d20;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (min-width: 768px) {
-  .covers-item .image-container {
-    width: 544px;
-    height: 314px;
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .covers {
+    background-image: url('../img/img-covers/covers-bg@2x.png');
   }
 }
 
-@media (max-width: 767px) {
+.covers-container {
+  margin-bottom: 96px;
+  overflow: hidden;
+}
+
+.covers-item {
+  transform: rotate(16deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin-right: 44px;
+  margin-bottom: 50px;
+  width: 282px;
+  height: 162px;
+  animation-name: marqueeLine;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  flex-shrink: 0;
+}
+
+/* @keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+} */
+
+@media screen and (min-width: 375px) {
+  .covers-container {
+    height: 508px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-container {
+    height: 960px;
+  }
   .covers-item .image-container {
-    width: 282px;
-    height: 162px;
+    width: 544px;
+    height: 314px;
   }
 }
 
@@ -43,46 +83,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-/* .content {
-  position: relative;
-}
-
-.marquee {
-  position: absolute;
-  right: -800px;
-  left: 0;
-  overflow: hidden;
-}
-
-.marquee__inner {
-  height: 100vh;
-  display: flex;
-  transform: rotate(16deg);
-}
-
-.marquee__line {
-  flex-shrink: 0;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% / 4);
-  animation: marqueeLine 10s linear infinite;
-}
-
-.marquee__line img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-@keyframes marqueeLine {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-150%);
-  }
-} */
