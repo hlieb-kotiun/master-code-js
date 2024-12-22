@@ -74,9 +74,10 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #1C1D20;
+
     border: 1px solid #fafafa99;
     color: #fff;
+    fill: #fafafa99;
 
 }
 .review-list{
@@ -91,6 +92,8 @@
 
 background-color: #FAFAFA;
 }
+
+
 
 
 
