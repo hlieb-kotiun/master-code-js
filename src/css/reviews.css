@@ -1,6 +1,6 @@
 
 
-/* Для контейнера слайдера */
+
 .swiper {
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     
 }
 
-/* Для слайдів */
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
     /* Внутрішній відступ */
 }
 
-/* Для обгортки контенту у слайді */
+
 .wraper {
     position: relative;
     display: flex;
