@@ -15,10 +15,10 @@ getReviers()
         console.log(data)
         reviews.insertAdjacentHTML("beforeend", createMarkUp(data))
         const swiper = new Swiper('.swiper', {
-       slidesPerView: 1, // Кількість видимих слайдів
-    spaceBetween: 16, // Відступи між слайдами
-    slidesPerGroup: 1, // Кількість слайдів для прокручування
-    centeredSlides: true, // Центрування слайдів
+       slidesPerView: 1,
+    spaceBetween: 16, 
+    slidesPerGroup: 1, 
+    centeredSlides: true, 
    
     navigation: {
         nextEl: '.next-btn',
