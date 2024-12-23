@@ -1,0 +1,160 @@
+.reviews-container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.rew-name {
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FAFAFA66;
+    margin-bottom: 32px;
+    margin-right: auto;
+}
+
+.swiper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 342px;
+    text-align: left;
+
+
+}
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 342px;
+    padding: 0;
+    /* Внутрішній відступ */
+}
+
+.review-lis {
+    align-items: center;
+    justify-content: ce;
+}
+
+.reviews-item {
+    padding-left: 0;
+
+
+}
+
+
+.wraper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    border: 1px solid #fafafa99;
+    border-radius: 10px;
+    padding: 24px 16px;
+    width: 342px;
+    height: 300px;
+    margin-bottom: 32px;
+
+}
+
+/* Зображення у слайді */
+.reviews-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+/* Текст автора */
+.review-author {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #FAFAFA;
+}
+
+/* Текст відгуку */
+.review-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fafafa99;
+    max-width: 342px;
+    overflow: hidden;
+}
+
+.btn-container {
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #fafafa99;
+
+}
+
+.review-list {
+    margin-bottom: 32px;
+}
+
+.swiper-pagination {
+    margin-bottom: 50px;
+
+
+}
+
+.swiper-pagination-bullet {
+
+    background-color: #FAFAFA;
+}
+
+.svg-arr {
+    fill: #fafafa99;
+    width: 32px;
+    height: 32px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .swiper {
+
+        max-width: 700px;
+    }
+
+    .reviews-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .swiper {
+
+        max-width: 1376px;
+    }
+
+    .reviews-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.disabled {
+    fill: rgba(205, 205, 212, 0.3);
+    border-color: rgba(205, 205, 212, 0.3);
+}
