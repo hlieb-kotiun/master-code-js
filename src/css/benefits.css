@@ -1,0 +1,101 @@
+.benefits-container {
+  margin-bottom: 64px;
+}
+
+.benefits-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.benefits-item {
+  background-color: #242527;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.benefits-item-text {
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.benefits-icons-container {
+  fill: none;
+  stroke: #fafafa;
+  background-color: #ed3b44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.benefits-link {
+  letter-spacing: -0.02em;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  display: inline-block;
+}
+
+/**-----------TABLET BENEFITS--------------*/
+
+@media screen and (min-width: 768px) {
+  .benefits-container {
+    margin-bottom: 96px;
+    padding: 0 32px;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .benefits-item {
+    max-width: 344px;
+  }
+}
+
+/**--------------DESKTOP BENEFITS-----------*/
+
+@media screen and (min-width: 1200px) {
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 164px;
+  }
+
+  .benefits-right-container {
+    width: 680px;
+  }
+
+  .benefits-list {
+    justify-content: flex-start;
+  }
+
+  .benefits-item {
+    max-width: 332px;
+  }
+}
