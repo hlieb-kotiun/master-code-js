@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  background-image: url(./img/img-hero/backgrnd-mobile.png);
+  background-image: url(../img/img-hero/backgrnd-mobile.png);
 
   background-repeat: no-repeat;
 
@@ -11,6 +11,7 @@
   position: relative;
 
   height: 812px;
+  margin-bottom: 64px;
 }
 
 .hero-title {
@@ -82,10 +83,11 @@
 
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: url(./img/img-hero/backgrnd-laptop.png);
+    background-image: url(../img/img-hero/backgrnd-laptop.png);
     background-size: contain;
     background-position: left 0;
     height: 1094px;
+    margin-bottom: 18px;
   }
   .hero-title {
     font-weight: 500;
@@ -101,16 +103,18 @@
   .social-media-list {
     justify-content: flex-end;
     column-gap: 8px;
+    margin-bottom: 78 px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url(./img/img-hero/hero-backgrund.png);
+    background-image: url(../img/img-hero/hero-backgrund.png);
     background-size: cover;
     background-position: center;
     text-align: center;
     height: 900px;
+    margin-bottom: 96px;
   }
 
   .hero-title {
