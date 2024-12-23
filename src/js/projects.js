@@ -11,6 +11,24 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  loop: false, // Зациклення слайдів (за потреби можна ввімкнути)
-  autoplay: true, // Вимкнення автопрокрутки
+  on: {
+    slideChange: function () {
+      const nextButton = document.querySelector('.right-btn');
+      const prevButton = document.querySelector('.left-btn');
+
+      if (this.isEnd) {
+        nextButton.setAttribute('disabled', true);
+      } else {
+        nextButton.removeAttribute('disabled');
+      }
+
+      if (this.isBeginning) {
+        prevButton.setAttribute('disabled', true);
+      } else {
+        prevButton.removeAttribute('disabled');
+      }
+    },
+  },
+  loop: false,
+  autoplay: false,
 });
