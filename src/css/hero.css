@@ -1,0 +1,121 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-image: url(./img/img-hero/backgrnd-mobile.png);
+
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  position: relative;
+
+  height: 812px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 343px;
+  min-height: 250px;
+  text-align: start;
+  margin-bottom: 212px;
+}
+
+.social-media-list {
+  display: flex;
+  align-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.social-media-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px;
+  min-width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-right: 4px;
+}
+
+.social-media-item:last-child {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  min-width: 178px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-media-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.social-media-item:last-child .social-media-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+
+@media only screen and (min-width: 375px) {
+  .hero {
+    background-repeat: no-repeat;
+    background-position: left 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url(./img/img-hero/backgrnd-laptop.png);
+    background-size: contain;
+    background-position: left 0;
+    height: 1094px;
+  }
+  .hero-title {
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    max-width: 632px;
+    min-height: 450px;
+    margin-bottom: 187px;
+    margin-top: 300px;
+  }
+
+  .social-media-list {
+    justify-content: flex-end;
+    column-gap: 8px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url(./img/img-hero/hero-backgrund.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 900px;
+  }
+
+  .hero-title {
+    font-size: 90px;
+    max-width: 1084px;
+    min-height: 270px;
+  }
+}
