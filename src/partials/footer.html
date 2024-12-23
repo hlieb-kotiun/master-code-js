@@ -4,27 +4,28 @@
     <div class="footer-content">
       <span class="logo-container">
         <picture>
-            <source
-              srcset="../img/footer/logo-mobile-1x.png 1x, ../img/footer/logo-mobile-2x.png 2x
-              "
-              media="(max-width: 767px)"
-              
-            />
-            <source
-              srcset="../img/footer/logo-tablet-1x.png 1x,
-              ../img/footer/logo-tablet-2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            
-            <img
-              src="../img/footer/logo-tablet-1x.png"
-              alt="developer"
-              width="70"
-              class="footer-logo"
-            />
-          </picture>
-        
+          <source
+            srcset="
+              ./img/footer/logo-mobile-1x.png 1x,
+              ./img/footer/logo-mobile-2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./img/footer/logo-tablet-1x.png 1x,
+              ./img/footer/logo-tablet-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <img
+            src="./img/footer/logo-tablet-1x.png"
+            alt="developer"
+            width="70"
+            class="footer-logo"
+          />
+        </picture>
       </span>
       <div class="footer-text">
         <h2>LET'S <span class="text-accent">WORK</span></h2>
@@ -33,14 +34,16 @@
     </div>
 
     <form class="contact-form">
-      <input
-        type="email"
-        name="email"
-        placeholder="clients@gmail.com"
-        required
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        class="footer-input"
-      />
+      <div class="footer-container-messege">
+        <input
+          type="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          class="footer-input"
+        />
+      </div>
       <textarea
         name="comments"
         placeholder="comments"
@@ -66,12 +69,17 @@
       <div class="footer-modal-container">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="34" height="34">
-            <use href="../img/symbol-defs.svg#icon-close"></use>
+            <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
         <div class="container-answer">
-          <h3 class="title-answer">Thank you for your interest in cooperation!</h3>
-          <p class="text-answer">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+          <h3 class="title-answer">
+            Thank you for your interest in cooperation!
+          </h3>
+          <p class="text-answer">
+            The manager will contact you shortly to discuss further details and
+            opportunities for cooperation. Please stay in touch.
+          </p>
         </div>
       </div>
     </div>
