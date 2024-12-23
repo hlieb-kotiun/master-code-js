@@ -32,7 +32,7 @@
   max-width: 375px;
   height: 508px;
   margin: 0 auto;
-  margin-bottom: 96px;
+  margin-bottom: 64px;
   overflow: hidden;
 }
 
@@ -107,6 +107,7 @@
   .covers-container {
     height: 960px;
     max-width: 768px;
+    margin-bottom: 96px;
   }
   .covers-item .image-container {
     width: 544px;
@@ -119,5 +120,6 @@
 @media only screen and (min-width: 1200px) {
   .covers-container {
     max-width: 1440px;
+    margin-bottom: 172px;
   }
 }
