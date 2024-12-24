@@ -318,7 +318,7 @@
 @media only screen and (min-width: 768px) {
  
   .footer-container{
-    padding: 80px 32px;
+    padding: 80px 0;
 
   }
   .footer-content {
