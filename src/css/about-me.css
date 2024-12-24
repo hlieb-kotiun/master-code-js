@@ -2,19 +2,18 @@
   max-width: 375px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .about-me-description {
   display: flex;
   flex-direction: column;
- margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .about-me-text-wrapper {
   height: 500px;
   border-radius: 24px;
- background-color: #242527;
+  background-color: #242527;
   padding-top: 32px;
   padding-left: 32px;
   padding-right: 32px;
@@ -22,8 +21,8 @@
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
- color: #fafafa;
- margin-bottom: 16px;
+  color: #fafafa;
+  margin-bottom: 16px;
 }
 
 .accent-red {
@@ -53,14 +52,13 @@
 .active-is {
   transform: rotate(180deg);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .hidden {
   overflow: hidden;
   opacity: 0;
 }
-.about-me-info{
+.about-me-info {
   margin-bottom: 32px;
 }
 .accordeon-list {
@@ -81,12 +79,12 @@
   row-gap: 32px;
   letter-spacing: -0.02em;
 }
-.accordeon-content-text{
+.accordeon-content-text {
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-color: #fafafa;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }
 .accordeon-title {
   display: flex;
@@ -95,7 +93,6 @@ color: #fafafa;
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
 }
 
 .accordeon-content-role-list,
@@ -104,8 +101,6 @@ color: #fafafa;
   flex-direction: column;
   row-gap: 10px;
 }
-
-
 
 .about-me-swiper-container {
   display: flex;
@@ -132,15 +127,15 @@ color: #fafafa;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-  color:#fafafa;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }
 
 .swiper-content-wrap-active,
 .swiper-content-wrap:active {
-  background-color:#ed3b44;
+  background-color: #ed3b44;
   outline: transparent;
 }
 
@@ -284,3 +279,19 @@ letter-spacing: -0.02em;
     height: 200px;
   }
 }
+
+/* - - - */
+
+.acordeon-list-item {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* - - -  */
+/* .ac {
+  margin-top: 8px;
+
+  border: none !important;
+  background-color: transparent !important;
+  box-sizing: border-box;
+} */

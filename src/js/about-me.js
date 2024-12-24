@@ -3,6 +3,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Keyboard } from 'swiper/modules';
 import { Mousewheel } from 'swiper/modules';
+import 'accordion-js/dist/accordion.min.css';
 
 const accordeonList = document.querySelector('.accordeon-list');
 
