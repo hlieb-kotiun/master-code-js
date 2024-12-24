@@ -80,7 +80,7 @@
 
 /**--------------DESKTOP BENEFITS-----------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .benefits-container {
     display: flex;
     justify-content: space-between;
