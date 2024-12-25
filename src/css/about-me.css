@@ -1,3 +1,7 @@
+.about-me {
+  margin-bottom: 64px;
+}
+
 .about-me-container {
   max-width: 375px;
   display: flex;
@@ -147,8 +151,8 @@
 }
 
 .swiper-arrow-svg {
-  width: 28px;
-  height: 28px;
+  fill: transparent;
+  stroke: #3b3b3b;
 }
 
 .swiper-arrow:active {
@@ -162,6 +166,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-me {
+    margin-bottom: 96px;
+  }
   .about-me-container {
     padding-left: 32px;
     padding-right: 32px;
@@ -225,6 +232,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .about-me {
+    margin-bottom: 164px;
+  }
+
   .about-me-container {
     max-width: 1440px;
   }
