@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.project-swiper', {
   modules: [Navigation, Pagination, Scrollbar],
   slidesPerView: 1,
   spaceBetween: 0,
