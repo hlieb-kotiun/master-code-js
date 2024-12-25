@@ -16,7 +16,7 @@
 
   border-radius: 10px;
 
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 .wraper {
   position: relative;
@@ -26,9 +26,9 @@
   text-align: start;
   border: 1px solid #fafafa99;
   border-radius: 10px;
-  padding: 24px 16px;
+  padding: 32px 24px;
   max-width: 342px;
-  height: 300px;
+  height: 302px;
   margin-bottom: 32px;
 }
 .reviews-item {
@@ -47,7 +47,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #fafafa99;
-  max-width: 342px;
+  max-width: 295px;
   overflow: hidden;
 }
 
@@ -88,11 +88,20 @@
   }
   .reviews-container {
     padding: 0 32px;
+    
   }
+    .rev-button{
+      width: 68px;
+        height: 68px;
+    }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .reviews {
     margin-bottom: 164px;
   }
+    .rev-button {
+      width: 68px;
+      height: 68px;
+    }
 }
