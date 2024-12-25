@@ -17,7 +17,7 @@ mobileMenu.addEventListener('click', menuClose);
 
 function menuClose(event) {
   const click = event.target.nodeName;
-  if (click !== 'A' && click !== 'SPAN') {
+  if (click !== 'A' && click !== 'SPAN' && click !== 'BUTTON') {
     return;
   }
 

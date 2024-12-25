@@ -2,6 +2,10 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
+const leftBtn = document.querySelector('.left-btn');
+
+leftBtn.disabled = true;
+
 const swiper = new Swiper('.project-swiper', {
   modules: [Navigation, Pagination, Scrollbar],
   slidesPerView: 1,
