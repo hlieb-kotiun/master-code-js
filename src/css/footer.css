@@ -126,11 +126,11 @@
 }
 
 .success-label {
-  color: green;
+  color: rgb(6, 171, 6);
 }
 
 .error-label {
-  color: red;
+  color: rgb(247, 3, 3);
 }
 
 .footer-form-btn {
