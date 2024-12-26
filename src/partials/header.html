@@ -1,53 +1,116 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav-header">
-      <a href="./index.html" target="_blank" class="logo-link">
-        <div class="header-logo">
-          <img
+<header class="header header--mobile">
+  <div class="header-container">
+    <nav class="header-navigation">
+      <div class="main-photo">
+        <picture class="photo-logo">
+          <source
             srcset="
               ./img/img-header/logo-pic.png    1x,
               ./img/img-header/logo-pic-2x.png 2x
             "
-            src="./img/img-header/logo-pic.png"
-            alt="jefferson"
-            width="80"
-            height="80"
+            media="(min-width:1440px)"
           />
-          <div class="logo-text-wrapper">
-            <p class="logo-text">
-              jefferson<svg class="jefferson-star" width="8" height="8">
-                <use href="./img/symbol-defs.svg#icon-logo"></use>
-              </svg>
-            </p>
+          <source
+            srcset="
+              ./img/img-header/logo-pic.png    1x,
+              ./img/img-header/logo-pic-2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./img/img-header/logo-pic.png    1x,
+              ./img/img-header/logo-pic-2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            class="team-photo"
+            src="./img/img-header/logo-pic.png"
+            alt="Dev Lloyd"
+          />
+        </picture>
+        <span class="logo-header">jefferson*</span>
+      </div>
+    </nav>
+    <h2 class="title-menu">Menu</h2>
+    <nav class="mobile-menu-navigation">
+      <button class="mobile-menu-burger-btn" type="button">
+        <svg
+          class="mobile-menu-burger-icon mob-menu-icon"
+          width="28"
+          height="28"
+        >
+          <use href="../img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <a href="#work-together" class="header-btn"> Order the project </a>
+    </nav>
+  </div>
+  <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-container">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg
+          class="mobile-menu-close-btn-icon"
+          width="28"
+          height="28"
+          aria-label="mobile menu close icon"
+        >
+          <use href="../img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-navigation">
+        <div class="menu-container">
+          <div class="menu-button"></div>
+          <div class="menu menu-open">
+            <div class="menu-top">
+              <h2 class="title-menu">Menu</h2>
+            </div>
+            <ul class="mobile-menu">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#section-about">About me</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#container-benefits"
+                  >Benefits</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#projects-section"
+                  >Projects</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#faq-section">FAQ</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+      <a href="#work-together" class="header-btn btn btn-scroll-mobile"
+        >Order the project
       </a>
+    </div>
+  </div>
 
-      <div class="desktop-header-nav-wrapper">
-        <button class="header-menu" type="button">Menu</button>
-        <nav class="desktop-header-nav">
-          <ul class="desktop-header-list close">
-            <li class="desktop-header-item">
-              <a class="desktop-header-item-link" href="#about-me">About me</a>
-            </li>
-            <li class="desktop-header-item">
-              <a class="desktop-header-item-link" href="#benefits">Benefits</a>
-            </li>
-            <li class="desktop-header-item">
-              <a class="desktop-header-item-link" href="#projects">Projects</a>
-            </li>
-            <li class="desktop-header-item">
-              <a class="desktop-header-item-link" href="#faq">FAQ</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <button type="button" class="burger-btn">
-        <span class="burger-span"></span>
-        <span class="burger-span"></span>
-      </button>
-      <a class="header-btn" href="#work-together">Order the project</a>
-    </nav>
+  <div class="tablet-menu-wrapper">
+    <div class="container tablet-menu-container">
+      <nav class="tablet-menu-navigation">
+        <ul class="tablet-menu">
+          <li class="tablet-menu-item">
+            <a class="tablet-menu-link" href="#section-about">About me</a>
+          </li>
+          <li class="tablet-menu-item">
+            <a class="tablet-menu-link" href="#container-benefits">Benefits</a>
+          </li>
+          <li class="tablet-menu-item">
+            <a class="tablet-menu-link" href="#projects-section">Projects</a>
+          </li>
+          <li class="tablet-menu-item">
+            <a class="tablet-menu-link" href="#faq-section">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
