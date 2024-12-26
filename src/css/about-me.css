@@ -41,48 +41,50 @@
   border-radius: 24px;
   overflow: hidden;
 }
-
-.title-current {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-.active-is {
-  transform: rotate(180deg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hidden {
-  overflow: hidden;
-  opacity: 0;
-}
 .about-me-info {
   margin-bottom: 32px;
 }
-.accordeon-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.accordeon-list > li {
+ul.accordion-container li.ac.acordeon-list-item {
+  margin: 0;
+  padding: 32px 0;
+  padding-top: 20px;
+  background-color: transparent;
+  color: #fafafa;
+  border: none;
+  width: 100%;
+  border-color: transparent;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
-
-.accordeon-content {
-  padding-top: 12px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
+ul.accordeon-list li.ac button.ac-trigger.title-current {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
 }
+ul.accordion-container li.ac .ac-trigger.title-current:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  transform: translate(50%, -50%);
+}
+
+ul.accordion-container li.ac.is-active .title-icon {
+  transform: rotate(-180deg);
+}
+.title-icon {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  transition: transform 0.3s ease-in-out;
+}
+
 .accordeon-content-text {
   font-weight: 500;
   font-size: 16px;
@@ -90,20 +92,21 @@
   letter-spacing: -0.02em;
   color: #fafafa;
 }
-.accordeon-title {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
+.accordeon-content-text:first-child {
+  margin-bottom: 32px;
+}
+.accordeon-content .accordeon-content-text li {
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
+  color: #fafafa;
 }
-
-.accordeon-content-role-list,
-.accordeon-content-education-list {
+.role-list,
+.education-list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  gap: 10px;
 }
 
 .about-me-swiper-container {
@@ -175,8 +178,8 @@
     max-width: 768px;
   }
 
-  .section-about {
-    padding-bottom: 48px;
+  .about-me-description {
+    margin-bottom: 64px;
   }
 
   .about-me-text-wrapper {
@@ -187,31 +190,14 @@
     font-size: 38px;
     line-height: 1.05;
   }
-
-  .about-me-container {
-    row-gap: 64px;
+  .about-me-info {
+    margin-bottom: 64px;
   }
-
-  .accordeon-content {
-    row-gap: 16px;
+  ul.accordion-container li.ac.acordeon-list-item:first-child {
+    padding-top: 0;
   }
-
-  .accordeon-content-text > br {
-    display: none;
-  }
-
-  .accordeon-content {
-    padding-top: 8px;
-    padding-bottom: 32px;
-  }
-
-  .accordeon-list {
-    row-gap: 32px;
-  }
-
-  .title-current {
-    width: 40px;
-    height: 40px;
+  .about-me-swiper-container .about-me-skills {
+    margin-left: 0;
   }
 
   .about-me-skills {
@@ -224,7 +210,6 @@
     height: 200px;
     font-size: 20px;
   }
-
   .swiper-arrow-svg {
     width: 40px;
     height: 40px;
@@ -235,50 +220,33 @@
   .about-me {
     margin-bottom: 164px;
   }
-
   .about-me-container {
     max-width: 1440px;
   }
 
   .about-me-description {
     flex-direction: row;
-    column-gap: 16px;
   }
-
-  .section-about {
-    padding-top: 48px;
-    padding-bottom: 82px;
-  }
-
+.about-me-info{
+  margin-bottom: 96px;
+}
   .about-me-text-wrapper {
     max-width: 680px;
+    margin-right: 16px;
+    font-weight: 500;
+    font-size: 38px;
+    margin-bottom: 0;
   }
-
-  .about-me-container {
-    row-gap: 96px;
+  .ul.accordion-container li.ac .ac-trigger.title-current:after {
+    width: 40;
+    height: 40;
   }
-
-  .accordeon-content {
-    padding-right: 68px;
-  }
-
-  .accordeon-content-text {
-    display: block;
-    margin-left: 696px;
-  }
-
-  .accordeon-content-role-list,
-  .accordeon-content-education-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    margin-left: 696px;
-  }
-
-  .accordeon-content-text > br {
-    display: inline;
-  }
-
+ .accordeon-content{
+  width: 612px;
+  margin-left: auto;
+  margin-right: 68px;
+  margin-bottom: 32px;
+ }
   .about-me-swiper-container {
     max-width: 1314px;
     margin: 0 auto;
@@ -293,16 +261,14 @@
 
 /* - - - */
 
-.acordeon-list-item {
+/* .acordeon-list-item {
   border: none !important;
   background-color: transparent !important;
-}
+} */
 
 /* - - -  */
 /* .ac {
-  margin-top: 8px;
-
   border: none !important;
   background-color: transparent !important;
-  box-sizing: border-box;
+  
 } */
