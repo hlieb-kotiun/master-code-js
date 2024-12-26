@@ -18,6 +18,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 100vw;
   min-height: 100vh;
