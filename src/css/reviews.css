@@ -24,12 +24,12 @@
   flex-direction: column;
   align-items: start;
   text-align: start;
-  border: 1px solid #fafafa99;
-  border-radius: 10px;
+  border: 1px solid #FAFAFA33;
+  border-radius: 20px;
   padding: 32px 24px;
   max-width: 342px;
   height: 302px;
-  margin-bottom: 32px;
+  
 }
 .reviews-item {
   align-items: center;
@@ -80,6 +80,9 @@
 .reviews-item {
   display: flex;
   justify-items: center;
+}
+.rev-wrapper{
+  margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
