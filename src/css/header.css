@@ -18,12 +18,17 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  max-width: 367px;
+  width: 100%;
+  /* max-width: 367px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
-
+.main-photo {
+  display: flex;
+  /* align-items: center;  */
+  gap: 10px;
+}
 .header--mobile {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -74,8 +79,10 @@
 
 .title-menu {
   display: none;
-  margin-right: 151px;
-  margin-left: 151px;
+  /* margin-right: 151px; */
+  margin-right: auto;
+  /* margin-left: 151px; */
+  margin-left: auto;
 }
 
 .mobile-menu-burger-btn,
@@ -197,6 +204,8 @@
 .menu {
   width: 300px;
   overflow: hidden;
+  
+  
 }
 .menu-open {
   display: inline-block;
@@ -212,30 +221,71 @@
 .title-menu {
   cursor: pointer;
 }
-
+.title-menu,
+.title-menu .mobile-menu-link,
+.mobile-menu-link,
+.tablet-menu-link,
+.tablet-menu-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .title-menu:hover,
 .title-menu:focus,
 .mobile-menu-link:hover,
 .mobile-menu-link:focus,
 .tablet-menu-link:hover,
 .tablet-menu-link:focus {
-  color: var(--coral-button);
+  color: #ed3b44;
   cursor: pointer;
 }
-
+/* .header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    white-space: nowrap;
+    background-color: #ed3b44;
+  } */
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 736px;
+    width: 100%;
   }
   .mobile-menu-close-btn,
   .mobile-menu-burger-btn {
     display: none;
   }
   .header-btn {
-    display: block;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    white-space: nowrap;
+    background-color: #ed3b44;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-btn:hover,
+  .header-btn:focus{
+    background-color:  #e0373f;
+
   }
   .title-menu {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
     display: inline-block;
     text-decoration: underline;
     cursor: pointer;
@@ -251,8 +301,10 @@
     max-width: 1440px;
   }
   .title-menu {
-    margin-right: 500px;
-    margin-left: 500px;
+    /* margin-right: 500px; */
+    margin-right: auto;
+    /* margin-left: 500px; */
+    margin-left: auto;
   }
   .tablet-menu {
     margin-left: auto;
