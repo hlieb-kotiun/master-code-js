@@ -7,7 +7,6 @@ desktopHeaderWrapper.addEventListener('click', menuControl);
 
 function menuControl(evevt) {
   const menuClick = evevt.target.nodeName;
-  console.log(menuClick);
 
   if (menuClick !== 'A' && menuClick !== 'BUTTON') {
     return;

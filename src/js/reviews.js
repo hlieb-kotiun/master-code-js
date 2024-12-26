@@ -13,7 +13,6 @@ const swiperButtonBrev = document.querySelector('.rev-button');
 swiperButtonBrev.disabled = true;
 
 async function getReviers() {
-  console.log('виклик функції');
   const API_URL = 'https://portfolio-js.b.goit.study/api/reviews'; // правильний URL
   return await axios(`${API_URL}`);
 }
@@ -21,8 +20,6 @@ async function getReviers() {
 const reviews = document.querySelector('.js-review');
 getReviers()
   .then(({ data }) => {
-    console.log('повернення запиту');
-    console.log(data);
     reviews.innerHTML = '';
     reviews.insertAdjacentHTML('beforeend', createMarkUp(data));
 
@@ -69,7 +66,6 @@ getReviers()
         },
       },
     });
-    console.log('Swiper initialized', revSwiper);
   })
   .catch(error => {
     const options = {
