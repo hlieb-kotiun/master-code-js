@@ -1,11 +1,9 @@
-.about-me {
-  margin-bottom: 64px;
-}
-
 .about-me-container {
   max-width: 375px;
   display: flex;
   flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .about-me-description {
@@ -169,12 +167,9 @@ ul.accordion-container li.ac.is-active .title-icon {
 }
 
 @media screen and (min-width: 768px) {
-  .about-me {
-    margin-bottom: 96px;
-  }
   .about-me-container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: 64px;
+    padding-bottom: 96px;
     max-width: 768px;
   }
 
@@ -217,19 +212,18 @@ ul.accordion-container li.ac.is-active .title-icon {
 }
 
 @media screen and (min-width: 1440px) {
-  .about-me {
-    margin-bottom: 164px;
-  }
   .about-me-container {
     max-width: 1440px;
+    padding-top: 96px;
+    padding-bottom: 164px;
   }
 
   .about-me-description {
     flex-direction: row;
   }
-.about-me-info{
-  margin-bottom: 96px;
-}
+  .about-me-info {
+    margin-bottom: 96px;
+  }
   .about-me-text-wrapper {
     max-width: 680px;
     margin-right: 16px;
@@ -241,12 +235,12 @@ ul.accordion-container li.ac.is-active .title-icon {
     width: 40;
     height: 40;
   }
- .accordeon-content{
-  width: 612px;
-  margin-left: auto;
-  margin-right: 68px;
-  margin-bottom: 32px;
- }
+  .accordeon-content {
+    width: 612px;
+    margin-left: auto;
+    margin-right: 68px;
+    margin-bottom: 32px;
+  }
   .about-me-swiper-container {
     max-width: 1314px;
     margin: 0 auto;

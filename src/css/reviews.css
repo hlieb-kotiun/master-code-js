@@ -1,7 +1,8 @@
-.reviews {
-  margin-bottom: 64px;
-}
 
+.reviews-container{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .rev-name {
   margin-bottom: 32px;
   font-weight: 600;
@@ -83,13 +84,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .reviews {
-    margin-bottom: 96px;
-  }
-  .reviews-container {
-    padding: 0 32px;
-    
-  }
+  .reviews-container{
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
     .rev-button{
       width: 68px;
         height: 68px;
@@ -97,9 +95,11 @@
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .reviews {
-    margin-bottom: 164px;
-  }
+   .reviews-container{
+  padding-top: 164px;
+  padding-bottom: 164px;
+}
+
     .rev-button {
       width: 68px;
       height: 68px;

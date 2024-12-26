@@ -6,12 +6,9 @@
   background-image: url(../img/img-hero/backgrnd-mobile.png);
 
   background-repeat: no-repeat;
-
   background-size: contain;
   position: relative;
-
   height: 812px;
-  margin-bottom: 64px;
 }
 
 .hero-title {
@@ -87,7 +84,7 @@
     background-size: contain;
     background-position: left 0;
     height: 1024px;
-    margin-bottom: 64px;
+    
   }
   .container .hero {
     width: 768px;
@@ -120,10 +117,10 @@
     background-size: contain;
     background-position: left 0;
     height: 900px;
-    margin-bottom: 96px;
+    
   }
   .container .hero {
-    max-width: 1440;
+    max-width: 1440px;
   }
   .content-wrapper {
     margin-bottom: 0;
