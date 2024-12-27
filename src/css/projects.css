@@ -1,4 +1,4 @@
-.projects-container {
+.projects {
   padding-bottom: 64px;
 }
 
@@ -130,7 +130,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .projects-container {
+  .projects {
     padding-bottom: 96px;
   }
   .projects-list {
@@ -194,7 +194,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  
+  .projects {
+    padding-bottom: 196px;
+  }
+
   .projects-list {
     display: flex;
     flex-direction: row;
@@ -208,5 +211,4 @@
   .grey-bg-item {
     border-radius: 0 24px 24px 0;
   }
-  
 }

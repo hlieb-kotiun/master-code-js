@@ -7,7 +7,7 @@
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-.benefits-container {
+.benefits {
   padding-bottom: 64px;
   padding-top: 64px;
 }
@@ -65,13 +65,12 @@
 
 .benefits-link:hover,
 .benefits-link:focus {
-  color: rgba(250, 250, 250, 0.2);
   border-color: #fafafa;
 }
 /**-----------TABLET BENEFITS--------------*/
 
 @media screen and (min-width: 768px) {
-  .benefits-container {
+  .benefits {
     padding-bottom: 96px;
     padding-top: 96px;
   }
@@ -90,11 +89,14 @@
 /**--------------DESKTOP BENEFITS-----------*/
 
 @media screen and (min-width: 1440px) {
+  .benefits {
+    padding-bottom: 164px;
+    padding-top: 164px;
+  }
+
   .benefits-container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 164px;
-    padding-top: 164px;
   }
 
   .benefits-right-container {
