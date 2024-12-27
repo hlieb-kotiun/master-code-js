@@ -167,23 +167,17 @@
   }
 
   /* ++++ */
-  .hero-social-item {
-    width: 55px;
-  }
-  .hero-social-item,
-  .email-item {
-    height: 55px;
-  }
+
   .hero-social-link {
-    padding: 18px 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
   }
-  .email-item {
+  .email-link {
     width: 223px;
+    font-size: 16px;
   }
 
-  .email-link {
-    padding: 18px 24px;
-  }
   /* +++++ */
 }
 
