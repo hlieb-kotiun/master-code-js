@@ -11,18 +11,10 @@
   overflow: hidden;
 }
 
-.covers {
-  background-image: url('../img/img-covers/covers-bg.png');
-  backdrop-filter: blur(30px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .covers {
+  .covers-container {
     background-image: url('../img/img-covers/covers-bg@2x.png');
   }
 }
@@ -32,8 +24,12 @@
   max-width: 375px;
   height: 508px;
   margin: 0 auto;
-  
   overflow: hidden;
+  background-image: url('../img/img-covers/covers-bg.png');
+  backdrop-filter: blur(30px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .covers-list {
@@ -120,6 +116,5 @@
 @media only screen and (min-width: 1440px) {
   .covers-container {
     max-width: 1440px;
-    
   }
 }
