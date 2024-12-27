@@ -168,7 +168,6 @@ ul.accordion-container li.ac.is-active .title-icon {
 
 @media screen and (min-width: 768px) {
   .about-me-container {
-    padding-top: 64px;
     max-width: 768px;
   }
 
