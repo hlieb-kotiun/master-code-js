@@ -1,8 +1,11 @@
+.about-me {
+  padding-top: 64px;
+}
+
 .about-me-container {
   max-width: 375px;
   display: flex;
   flex-direction: column;
-  padding-top: 64px;
 }
 
 .about-me-description {
