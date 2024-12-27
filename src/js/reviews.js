@@ -1,11 +1,15 @@
 import axios from 'axios';
 import Swiper from 'swiper';
 import 'swiper/css';
-
+import {
+  Keyboard,
+  Mousewheel,
+  Navigation,
+  Pagination,
+  Scrollbar,
+} from 'swiper/modules';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 let hasErrorShown = false; // Прапорець для перевірки, чи показана помилка
 
@@ -13,7 +17,7 @@ const swiperButtonBrev = document.querySelector('.rev-button');
 swiperButtonBrev.disabled = true;
 
 async function getReviers() {
-  const API_URL = 'https://portfolio-js.b.goit.study/api/reviews'; // правильний URL
+  const API_URL = 'https://portfolio-js.b.goit.study/api/reviews'; 
   return await axios(`${API_URL}`);
 }
 
@@ -24,14 +28,14 @@ getReviers()
     reviews.insertAdjacentHTML('beforeend', createMarkUp(data));
 
     const revSwiper = new Swiper('.rev-swiper', {
-      modules: [Navigation, Pagination, Scrollbar],
+      modules: [Navigation, Pagination, Scrollbar, Keyboard, Mousewheel],
       navigation: {
         nextEl: '.rev-next', // Клас для кнопки "next"
         prevEl: '.rev-prev', // Клас для кнопки "prev"
       },
       on: {
         slideChange: function () {
-          const nextButton = document.querySelector('.right-btn-disabled  ');
+          const nextButton = document.querySelector('.right-btn-disabled');
           const prevButton = document.querySelector('.left-btn-disabled');
 
           if (this.isEnd) {
@@ -51,6 +55,9 @@ getReviers()
         enabled: true,
         onlyInViewport: true,
       },
+      mousewheel: {
+        forceToAxis: true,
+      },
       spaceBetween: 16,
       slidesPerView: 1,
       slidesPerGroup: 1,
@@ -65,6 +72,26 @@ getReviers()
           slidesPerGroup: 2,
         },
       },
+    });
+
+    const swiperButtonNext = document.querySelector('.rev-next');
+    const swiperButtonPrev = document.querySelector('.rev-prev');
+
+    swiperButtonNext.addEventListener('click', () => revSwiper.slideNext());
+    swiperButtonPrev.addEventListener('click', () => revSwiper.slidePrev());
+
+    swiperButtonNext.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        revSwiper.slideNext();
+        event.preventDefault();
+      }
+    });
+
+    swiperButtonPrev.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        revSwiper.slidePrev();
+        event.preventDefault();
+      }
     });
   })
   .catch(error => {

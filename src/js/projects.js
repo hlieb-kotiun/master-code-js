@@ -1,13 +1,19 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import {
+  Keyboard,
+  Mousewheel,
+  Navigation,
+  Pagination,
+  Scrollbar,
+} from 'swiper/modules';
 
 const leftBtn = document.querySelector('.left-btn');
 
 leftBtn.disabled = true;
 
 const swiper = new Swiper('.project-swiper', {
-  modules: [Navigation, Pagination, Scrollbar],
+  modules: [Navigation, Pagination, Scrollbar, Mousewheel, Keyboard], 
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 500,
@@ -35,4 +41,11 @@ const swiper = new Swiper('.project-swiper', {
   },
   loop: false,
   autoplay: false,
+  mousewheel: {
+    forceToAxis: true, 
+  },
+  keyboard: {
+    enabled: true, 
+    onlyInViewport: true, 
+  },
 });
