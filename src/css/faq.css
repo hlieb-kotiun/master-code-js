@@ -212,35 +212,4 @@ ul.accordion-container li.ac .ac-panel p.ac-text.faq-text {
     top: 9px;
     right: 6px;
   }
-
-  /* ul.accordion-container li.ac.faq-item-container:nth-child(odd) {
-    border-right: 1px solid rgba(250, 250, 250, 0.2);
-  } */
-  /* Padding adjustment for even FAQ items */
-  /* ul.accordion-container li.ac.faq-item-container:nth-child(even) {
-    padding-left: 32px;
-  } */
-
-  /* FAQ button padding adjustment */
-  /* ul.accordion-container li.ac button.ac-trigger.faq-button {
-    padding-right: 82px;
-  } */
-
-  /* Position adjustment for pseudo-element ::after */
-  /* ul.accordion-container li.ac .ac-trigger.faq-button::after {
-    top: 20px;
-  } */
-
-  /* Position adjustment for pseudo-element on odd items */
-  /* ul.accordion-container
-    li.ac.faq-item-container:nth-child(odd)
-    .ac-trigger.faq-button::after {
-    right: 52px;
-  }
-
-  ul.accordion-container
-    li.ac.faq-item-container:nth-child(odd)
-    .faq-arrow-icon {
-    right: 42px;
-  } */
 }
